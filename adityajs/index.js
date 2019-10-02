@@ -7,9 +7,10 @@
 // });
 // alert("connected");
 
-var body_weight = document.querySelector(".body").value;
-var height = document.querySelector(".height").value;
-var BMI = body_weight / ( height * height );
+
 document.querySelector(".button1").addEventListener("click" , function () {
+  var body_weight = document.querySelector(".body").value;
+  var height = document.querySelector(".height").value;
+  var BMI = body_weight / ( height * height );
   alert("Your body mass index is :  " + BMI);
 });
