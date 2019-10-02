@@ -12,5 +12,10 @@ document.querySelector(".button1").addEventListener("click" , function () {
   var body_weight = document.querySelector(".body").value;
   var height = document.querySelector(".height").value;
   var BMI = body_weight / ( height * height );
-  alert("Your body mass index is :  " + BMI);
+  document.querySelector(".content").innerHTML = BMI;
+  document.querySelector('.first').style.display = 'flex';
+  document.querySelector('.close').addEventListener('click',
+  function() {
+      document.querySelector('.first').style.display = 'none';
+});
 });
