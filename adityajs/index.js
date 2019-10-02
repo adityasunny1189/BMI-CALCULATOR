@@ -1,0 +1,15 @@
+// document.querySelector(".button1").addEventListener("click" , function () {
+//   alert("Buttton 1 clicked");
+// });
+//
+// document.querySelector(".button2").addEventListener("click" , function () {
+//   alert("Buttton 1 clicked");
+// });
+// alert("connected");
+
+var body_weight = document.querySelector(".body").value;
+var height = document.querySelector(".height").value;
+var BMI = body_weight / ( height * height );
+document.querySelector(".button1").addEventListener("click" , function () {
+  alert("Your body mass index is :  " + BMI);
+});
